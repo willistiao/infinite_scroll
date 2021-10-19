@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* scrollbar-width: none; */
+}
+
+/* *::-webkit-scrollbar {
+    display: none;
+} */
+
+html,
+body {
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #161616;
+}
+
+main {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.scrollable {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    border: solid 1px red;
+}
+
+.menu {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    border: solid 1px blue;
+}
+
+.menu-item {
+    position: relative;
+    height: 20%;
+    border: solid 1px green;
+    
+}
+
+a {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
